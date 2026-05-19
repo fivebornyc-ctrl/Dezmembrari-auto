@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AutoParts Dismantle — piese auto second-hand, service auto și dezmembrări Opel, BMW, Mercedes."
+    />
+    <title>AutoParts Dismantle — Piese & Service Auto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#">
+        <span class="logo-icon" aria-hidden="true">⚙</span>
+        AutoParts <strong>Dismantle</strong>
+      </a>
+      <input class="nav-check" type="checkbox" id="nav-check" aria-hidden="true" />
+      <label class="nav-toggle" for="nav-check">
+        <span class="sr-only">Meniu</span>
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav">
+        <a href="#piese">Piese auto</a>
+        <a href="#service">Service auto</a>
+        <a href="#marci">Mărci</a>
+        <a href="#program">Program</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="tag">Demo portofoliu · prețuri fictive</p>
+        <h1>Dezmembrări auto & piese second-hand garantate</h1>
+        <p>
+          Peste 3.000 de piese în stoc din dezmembrări controlate. Service complet,
+          montaj și verificare computerizată pentru toate mărcile europene.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#piese">Caută piese</a>
+          <a class="btn btn-outline" href="#service">Programează service</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>15+</strong> ani experiență</li>
+          <li><strong>12</strong> mărci dezmembrate</li>
+          <li><strong>48h</strong> livrare națională</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section brands" id="marci" aria-labelledby="titlu-marci">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Dezmembrări active</p>
+          <h2 id="titlu-marci">Mărci pe care le dezmembrăm</h2>
+          <p class="section-desc">
+            Autoturisme și SUV-uri din parcul propriu — piese verificate, cu factură
+            și garanție 30–90 zile (în funcție de categorie).
+          </p>
+        </header>
+        <ul class="brand-grid">
+          <li class="brand-card brand-opel">
+            <span class="brand-name">Opel</span>
+            <span class="brand-models">Astra · Corsa · Insignia · Mokka</span>
+          </li>
+          <li class="brand-card brand-bmw">
+            <span class="brand-name">BMW</span>
+            <span class="brand-models">Seria 3 · Seria 5 · X3 · X5</span>
+          </li>
+          <li class="brand-card brand-mercedes">
+            <span class="brand-name">Mercedes-Benz</span>
+            <span class="brand-models">C-Class · E-Class · GLC · Sprinter</span>
+          </li>
+          <li class="brand-card brand-vw">
+            <span class="brand-name">Volkswagen</span>
+            <span class="brand-models">Golf · Passat · Tiguan · Polo</span>
+          </li>
+          <li class="brand-card brand-audi">
+            <span class="brand-name">Audi</span>
+            <span class="brand-models">A3 · A4 · A6 · Q5</span>
+          </li>
+          <li class="brand-card brand-ford">
+            <span class="brand-name">Ford</span>
+            <span class="brand-models">Focus · Fiesta · Kuga · Mondeo</span>
+          </li>
+          <li class="brand-card brand-renault">
+            <span class="brand-name">Renault</span>
+            <span class="brand-models">Clio · Megane · Kadjar · Scenic</span>
+          </li>
+          <li class="brand-card brand-peugeot">
+            <span class="brand-name">Peugeot</span>
+            <span class="brand-models">208 · 308 · 3008 · Partner</span>
+          </li>
+          <li class="brand-card brand-skoda">
+            <span class="brand-name">Škoda</span>
+            <span class="brand-models">Octavia · Fabia · Superb · Kodiaq</span>
+          </li>
+          <li class="brand-card brand-fiat">
+            <span class="brand-name">Fiat</span>
+            <span class="brand-models">500 · Punto · Tipo · Ducato</span>
+          </li>
+          <li class="brand-card brand-toyota">
+            <span class="brand-name">Toyota</span>
+            <span class="brand-models">Corolla · Yaris · RAV4 · Avensis</span>
+          </li>
+          <li class="brand-card brand-dacia">
+            <span class="brand-name">Dacia</span>
+            <span class="brand-models">Logan · Sandero · Duster · Spring</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="piese" aria-labelledby="titlu-piese">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Catalog piese</p>
+          <h2 id="titlu-piese">Piese auto — prețuri orientative</h2>
+          <p class="section-desc">
+            Prețurile sunt fictive (demo). Stocul se actualizează zilnic — sună pentru
+            disponibilitate pe cod OEM sau VIN.
+          </p>
+        </header>
+
+        <div class="price-tabs" role="tablist" aria-label="Categorii piese">
+          <button class="tab active" type="button" data-tab="motor" aria-selected="true">
+            Motor & transmisie
+          </button>
+          <button class="tab" type="button" data-tab="caroserie" aria-selected="false">
+            Caroserie
+          </button>
+          <button class="tab" type="button" data-tab="interior" aria-selected="false">
+            Interior & electric
+          </button>
+        </div>
+
+        <div class="price-panels">
+          <table class="price-table active" data-panel="motor">
+            <caption class="sr-only">Piese motor și transmisie</caption>
+            <thead>
+              <tr>
+                <th scope="col">Piesă</th>
+                <th scope="col">Compatibilitate</th>
+                <th scope="col">Stare</th>
+                <th scope="col">Preț</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Motor complet 1.6 CDTI</td>
+                <td>Opel Astra J / Zafira</td>
+                <td><span class="badge badge-ok">Testat</span></td>
+                <td class="price">4.850 lei</td>
+              </tr>
+              <tr>
+                <td>Cutie automată 8HP</td>
+                <td>BMW F30 320d</td>
+                <td><span class="badge badge-ok">Testat</span></td>
+                <td class="price">6.200 lei</td>
+              </tr>
+              <tr>
+                <td>Turbocompresor</td>
+                <td>Mercedes W205 C220d</td>
+                <td><span class="badge badge-ok">Testat</span></td>
+                <td class="price">2.400 lei</td>
+              </tr>
+              <tr>
+                <td>Alternator</td>
+                <td>VW Golf VII 1.4 TSI</td>
+                <td><span class="badge badge-mid">Uzură normală</span></td>
+                <td class="price">450 lei</td>
+              </tr>
+              <tr>
+                <td>Pompa injecție common-rail</td>
+                <td>Ford Focus III 1.6 TDCi</td>
+                <td><span class="badge badge-ok">Testat</span></td>
+                <td class="price">1.150 lei</td>
+              </tr>
+              <tr>
+                <td>Diferențial spate</td>
+                <td>BMW X5 E70 xDrive</td>
+                <td><span class="badge badge-ok">Testat</span></td>
+                <td class="price">3.100 lei</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="price-table" data-panel="caroserie" hidden>
+            <caption class="sr-only">Piese caroserie</caption>
+            <thead>
+              <tr>
+                <th scope="col">Piesă</th>
+                <th scope="col">Compatibilitate</th>
+                <th scope="col">Stare</th>
+                <th scope="col">Preț</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Capotă motor</td>
+                <td>Mercedes W212 E-Class</td>
+                <td><span class="badge badge-mid">Vopsită OEM</span></td>
+                <td class="price">1.800 lei</td>
+              </tr>
+              <tr>
+                <td>Ușă față dreapta</td>
+                <td>Opel Insignia B</td>
+                <td><span class="badge badge-ok">Impecabilă</span></td>
+                <td class="price">950 lei</td>
+              </tr>
+              <tr>
+                <td>Bară față completă</td>
+                <td>Audi A4 B9</td>
+                <td><span class="badge badge-mid">Cu senzori</span></td>
+                <td class="price">2.200 lei</td>
+              </tr>
+              <tr>
+                <td>Far LED dreapta</td>
+                <td>BMW G20 Seria 3</td>
+                <td><span class="badge badge-ok">Funcțional</span></td>
+                <td class="price">3.500 lei</td>
+              </tr>
+              <tr>
+                <td>Hayon spate</td>
+                <td>Peugeot 3008 II</td>
+                <td><span class="badge badge-mid">Zgârieturi ușoare</span></td>
+                <td class="price">1.400 lei</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="price-table" data-panel="interior" hidden>
+            <caption class="sr-only">Piese interior și electric</caption>
+            <thead>
+              <tr>
+                <th scope="col">Piesă</th>
+                <th scope="col">Compatibilitate</th>
+                <th scope="col">Stare</th>
+                <th scope="col">Preț</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tablou bord complet</td>
+                <td>BMW F10 520d</td>
+                <td><span class="badge badge-ok">Testat</span></td>
+                <td class="price">2.100 lei</td>
+              </tr>
+              <tr>
+                <td>Sistem navigație COMAND</td>
+                <td>Mercedes W204 C-Class</td>
+                <td><span class="badge badge-ok">Testat</span></td>
+                <td class="price">1.650 lei</td>
+              </tr>
+              <tr>
+                <td>Scaun șofer piele electric</td>
+                <td>Opel Insignia</td>
+                <td><span class="badge badge-mid">Uzură normală</span></td>
+                <td class="price">780 lei</td>
+              </tr>
+              <tr>
+                <td>Climatronic</td>
+                <td>VW Passat B8</td>
+                <td><span class="badge badge-ok">Încărcat</span></td>
+                <td class="price">620 lei</td>
+              </tr>
+              <tr>
+                <td>Calculator motor ECU</td>
+                <td>Renault Megane IV 1.5 dCi</td>
+                <td><span class="badge badge-ok">Codat</span></td>
+                <td class="price">890 lei</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="price-note">
+          * Garanție 30 zile piese mecanice · 14 zile caroserie · montaj în service: -10% manoperă
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="service" aria-labelledby="titlu-service">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Atelier autorizat</p>
+          <h2 id="titlu-service">Service auto</h2>
+          <p class="section-desc">
+            Revizii, diagnoză, frâne, distribuție și montaj piese din dezmembrare proprie.
+          </p>
+        </header>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Diagnoză computerizată</h3>
+            <p>Citire erori, raport PDF, ștergere erori non-critice.</p>
+            <p class="service-price">de la <strong>120 lei</strong></p>
+          </article>
+          <article class="service-card">
+            <h3>Revizie periodică</h3>
+            <p>Ulei, filtre, verificare 40 puncte, resetare service.</p>
+            <p class="service-price">de la <strong>280 lei</strong> + piese</p>
+          </article>
+          <article class="service-card">
+            <h3>Distribuție</h3>
+            <p>Kit distribuție + pompa apă, test presiune circuit.</p>
+            <p class="service-price">de la <strong>650 lei</strong> manoperă</p>
+          </article>
+          <article class="service-card">
+            <h3>Sistem frânare</h3>
+            <p>Plăcuțe, discuri, lichid frână, verificare etriere.</p>
+            <p class="service-price">de la <strong>180 lei</strong> manoperă</p>
+          </article>
+          <article class="service-card">
+            <h3>Geometrie roți</h3>
+            <p>Reglaj unghiuri, raport înainte/după, test suspensie.</p>
+            <p class="service-price"><strong>150 lei</strong> / ax</p>
+          </article>
+          <article class="service-card">
+            <h3>Montaj piese SH</h3>
+            <p>Montaj piese cumpărate de la noi — garanție extinsă la montaj.</p>
+            <p class="service-price">de la <strong>90 lei</strong> / oră</p>
+          </article>
+        </div>
+
+        <div class="service-pack">
+          <div class="pack-content">
+            <h3>Pachet „Pregătire ITP”</h3>
+            <p>
+              Verificare lumini, frâne, suspensie, evacuare + reglaj faruri. Ideal înainte
+              de inspecția tehnică periodică.
+            </p>
+          </div>
+          <p class="pack-price"><span>299 lei</span> fix</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="program" aria-labelledby="titlu-program">
+      <div class="container program-layout">
+        <header class="section-head">
+          <p class="section-label">Când ne găsești</p>
+          <h2 id="titlu-program">Program de lucru</h2>
+        </header>
+
+        <div class="schedule">
+          <div class="schedule-block">
+            <h3>Dezmembrări & depozit piese</h3>
+            <ul>
+              <li><span>Luni – Vineri</span><strong>08:00 – 18:00</strong></li>
+              <li><span>Sâmbătă</span><strong>08:00 – 14:00</strong></li>
+              <li><span>Duminică</span><strong>Închis</strong></li>
+            </ul>
+          </div>
+          <div class="schedule-block">
+            <h3>Service auto (atelier)</h3>
+            <ul>
+              <li><span>Luni – Vineri</span><strong>09:00 – 17:30</strong></li>
+              <li><span>Sâmbătă</span><strong>09:00 – 13:00</strong> (programări)</li>
+              <li><span>Duminică</span><strong>Închis</strong></li>
+            </ul>
+          </div>
+          <div class="schedule-block schedule-highlight">
+            <h3>Urgențe piese</h3>
+            <p>Linie WhatsApp pentru disponibilitate rapidă:</p>
+            <p class="hotline">07xx xxx xxx</p>
+            <p class="small">Răspuns în program · livrare curier 24–48h</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="titlu-contact">
+      <div class="container contact-layout">
+        <header class="section-head">
+          <p class="section-label">Solicită ofertă</p>
+          <h2 id="titlu-contact">Contact & localizare</h2>
+          <address class="contact-info">
+            <p><strong>AutoParts Dismantle SRL</strong></p>
+            <p>Str. Industriilor nr. 42, Sector 3, București</p>
+            <p>Email: <a href="mailto:contact@autoparts-demo.ro">contact@autoparts-demo.ro</a></p>
+            <p>Tel: <a href="tel:+40700000000">0700 000 000</a></p>
+          </address>
+        </header>
+
+        <form
+          class="contact-form"
+          onsubmit="event.preventDefault(); alert('Demo: cererea a fost trimisă! Vă contactăm în 24h.');"
+        >
+          <label>
+            Nume complet
+            <input type="text" required placeholder="Ion Popescu" />
+          </label>
+          <label>
+            Telefon
+            <input type="tel" required placeholder="07xx xxx xxx" />
+          </label>
+          <label>
+            Ce cauți?
+            <select required>
+              <option value="">Selectează...</option>
+              <option>Piese auto (cod OEM / VIN)</option>
+              <option>Programare service</option>
+              <option>Dezmembrare vehicul</option>
+              <option>Altceva</option>
+            </select>
+          </label>
+          <label>
+            Marca / model / an
+            <input type="text" placeholder="ex. BMW Seria 3, 2018" />
+          </label>
+          <label>
+            Detalii
+            <textarea rows="4" placeholder="Descrie piesa sau lucrarea necesară..."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Trimite cererea</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 AutoParts Dismantle — demo portofoliu. Prețuri și date fictive.</p>
+      <a href="../../index.html#proiecte">← Înapoi la portofoliu</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
