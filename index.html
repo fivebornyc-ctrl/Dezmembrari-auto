@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-uri — Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="top">
+        <div>
+          <h1>Task-uri</h1>
+          <p class="tag">Demo portofoliu</p>
+        </div>
+        <button type="button" id="toggle-theme" aria-label="Comută modul întunecat">
+          Mod întunecat
+        </button>
+      </header>
+
+      <form id="form-add" class="add-form">
+        <input id="input-task" type="text" placeholder="Sarcină nouă..." required />
+        <button type="submit">Adaugă</button>
+      </form>
+
+      <div class="filters" role="tablist">
+        <button type="button" class="filter active" data-filter="all">Toate</button>
+        <button type="button" class="filter" data-filter="active">Active</button>
+        <button type="button" class="filter" data-filter="done">Finalizate</button>
+      </div>
+
+      <ul id="list" class="task-list" aria-live="polite"></ul>
+      <p id="empty" class="empty hidden">Nicio sarcină. Adaugă una mai sus.</p>
+    </div>
+
+    <footer>
+      <a href="../../index.html#proiecte">← Înapoi la portofoliu</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
